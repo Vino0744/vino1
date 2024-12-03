@@ -1,0 +1,54 @@
+-g gdb调试
+
+1、layout src
+    显示源代码窗口
+    可用ctrl+L刷新窗口
+
+2、h（help）
+    查看命令帮助
+
+3、l（list）
+    显示代码
+
+4、i（info）
+    显示信息
+    i b查看所有断点
+    i locals查看当前上下文的局部变量
+    i program查看当前程序状态
+
+5、b（break）
+    设置断点
+    可以使用if语句作为判断条件
+    可以使用enable、disable、delete、clear对断点进行编辑
+
+6、w（watch）
+    设置观察点
+
+7、r（run）
+    运行程序 从头开始
+
+8、n（next）/ s（step）
+    单步执行程序
+
+9、display
+    每次停止执行（触发断点或者单步执行）时打印监视变量的值
+    可以通过 i display 显示监视信息并通过 delete display删除变量对应的监视
+
+10、p（print）
+    打印变量
+    可以使用 p f(x) 来查看 f(x) 调用后的结果
+
+11、x
+    查看内存
+
+12、whatis / ptype
+    查看变量或函数信息
+
+13、bt（backtrace）
+    显示当前的函数调用关系（栈帧）
+
+14、c（continue）
+    回复执行（到下一个断点）
+
+15、q（quit）
+    退出
